@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+header{
+    display: flex;
+    align-items: center;
+}
+h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+h1 span{
+    color: #36b0c0;
+    font-size: 4rem;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+img{
+    width: 100%;
+}
+.logo{
+    width: 100px;
+    margin-left: 15px;
+}
+.title{
+    width: 70%;
+    text-align: center;
+}
+.contact_detail{
+    margin-left: auto;
+    padding: 0 25px;
+}
+.contact_detail i{
+transform: translateY(20%);
+}
+.contact_detail ul li a{
+    color: black;
+}
+.contact_detail ul li a:hover{
+    color: #198d9c;
+}
+nav {
+    margin: 10px 0;
+    padding: 7px 0;
+}
+nav ul{
+    display: flex;
+    margin: 0;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-evenly;
+ 
+}
+nav ul li{
+    z-index: 2;
+}
+.btn{
+    padding: .675rem 1.5rem;
+    border: 2px solid   ;
+}
+
+main{
+    display: flex;
+}
+
+/* ==================slider============ */
+.slider {
+  
+    width: 60%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 10px;
+  }
+  
+  .carousel-item {
+    height: 500px;
+  }
+
+.carousel-indicators li{
+    background-color: #198d9c;
+    height: 5px;
+}
+
+  /* ===============form============== */
+  .contact_form{
+      margin: 0 auto;
+  }
+  .contact__container {
+    display: block;
+    border: 3px solid #62B6CB;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 0 0 10px 10px;
+    max-width: 400px;
+    position: relative;
+    color: #36b0c0;
+    box-shadow: 0 0 7px #727272;
+}
+.contact__container:before{
+position: absolute;
+content:'' ;
+height: 50px;
+top: -25px;
+width: 100px;
+background-color: #fff;
+/* box-shadow: 0 5px 10px -7px hsla(0,0%,0%,0.5); */
+box-shadow: 0 11px 10px -11px hsla(0, 0%, 0%, 0.7);
+right: -50px;
+transform: rotate(45deg);
+}
+.contact__container p{
+    
+margin: 0;
+margin-top: 5px;
+}
+.contact__title {
+    display: inline-block;
+}
+
+.contact__title h2 {
+    padding: 0 10px 0 0px;
+    margin: 5px 0;
+    color: #36b0c0;
+}
+
+.contact__form {
+    padding: 10px 10px 0 0;
+}
+
+hr {
+    width: 100%;
+    display: block;
+    margin: 5px 0;
+    height: 5px;
+    border: 0;
+    background-color: #c0f1ef;
+}
+
+input,
+textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 3px solid #25606f;
+    border-radius: 5px;
+    resize: none;
+    padding: 0 5px;
+    box-sizing: border-box;
+    font-family: 'Open Sans' sans-serif;
+    font-size: 18px;
+    color: #25606f;
+}
+
+input[type="text"] {
+    padding: 0;
+    height: 30px;
+    width: 90%;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+.contact__form-input {
+    margin: 4px 0 4px 0;
+}
+
+.contact__form-textarea {
+    margin: 0px 0;
+    width: 100%;
+    height: 100px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    height: 50px;
+    background-color: #25606f;
+    border: 0;
+    color: #FBFBFB;
+    border: 5px solid #25606f;
+    border-radius: 5px;
+    margin: 10px 0 0 0;
+    font-family: 'Open Sans' sans-serif;
+    font-size: 22px;
+}
+
+input[type="button"]:hover {
+    background-color: #368da2;
+    border: #368da2;
+}
+
+/* ============================ date picker=============== */
+
+#ui-datepicker-div {
+    position: absolute;
+    top: 475.6px;
+    left: 993.513px;
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    box-shadow: rgb(145, 142, 142) 0px 0px 8px;
+    border-radius: 8px;
+    width: 300px;
+    color: #41a0b8;
+    display: none;
+}
+.ui-datepicker-title {
+    text-align: center;
+    font-size: 20px;
+}
+.ui-datepicker-header a{
+    color: #41a0b8;
+    font-size: 20px;
+}
+.ui-datepicker-header a:nth-child(2){
+    color: #41a0b8;
+    float: right;
+}
+#ui-datepicker-div table {
+    border-collapse: collapse;
+    margin: 0px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.ui-state-default{
+    margin: 10px;
+    color: #41a0b8;
+}
+footer{
+    margin-top:20px;
+    background-color: #25606f;
+   
+}
+footer .footer-start{
+    display: flex;
+    padding: 20px;
+}
+footer hr{
+    height: 2px;
+}
+footer p{
+text-align: center;
+padding: 10px;
+margin: 0;
+color: #c0f1ef;
+}
+.review{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 80px;
+}
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+    border: 2px solid #58beb0;
+    border-radius: 10px;
+    text-align: center;
+}
+.card {
+    border: none;
+}
+.item{
+    margin: 20px;
+}
